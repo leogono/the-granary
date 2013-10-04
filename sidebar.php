@@ -19,10 +19,6 @@
 		<?php do_action( 'before_sidebar' ); ?>
 		<?php if ( ! dynamic_sidebar( 'sidebar-2' ) ) : ?>
 
-			<aside id="search" class="widget widget_search">
-				<?php get_search_form(); ?>
-			</aside>
-
 		<?php endif; // end sidebar widget area ?>
 	</div><!-- #home-mid -->
 
@@ -30,9 +26,7 @@
 		<?php do_action( 'before_sidebar' ); ?>
 		<?php if ( ! dynamic_sidebar( 'sidebar-3' ) ) : ?>
 
-			<aside id="search" class="widget widget_search">
-				<?php get_search_form(); ?>
-			</aside>
+			<?php echo do_shortcode("[metaslider id=162]"); ?>
 
 		<?php endif; // end sidebar widget area ?>
 	</div><!-- #home-slider -->
