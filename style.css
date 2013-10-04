@@ -441,6 +441,13 @@ p#footer-text {
 .textwidget {
 	border-bottom: 1px solid #fff;
 }
+#home-top h1.widget-title {
+	font-size: 20px;
+	font-weight: bold;
+}
+#home-mid h1.widget-title {
+	font-size: 30px;
+}
 #home-mid .widget_text {
 	width: 50%;
 }
