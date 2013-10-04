@@ -343,6 +343,73 @@ a:active {
 	margin: 0 auto;
 }
 
+/* Logo */
+h1.site-title {
+	width: 326px;
+	height: 58px;
+	background-image: url("images/GranaryLogo.png");
+	text-indent: -9999px;
+}
+h2.site-description {
+	display: none;
+	width: 326px;
+}
+
+/* Navigation */
+.site-branding {
+	width: 30%;
+	padding: 30px;
+	float: left;
+}
+.main-navigation a {
+	margin-right: 10px;
+	color: white;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 5px;
+}
+.main-navigation li.current_page_item a, 
+.main-navigation li.current-menu-item a {
+	border: 1px solid #fff;
+}
+
+/* Contents */
+#content,
+#masthead {
+	background-color: #999900;
+}
+#primary {
+	width: 60%;
+	float:left;
+	padding: 30px;
+}
+
+/* Widgets */
+#home-top {
+	width: 30%;
+	float: right;
+	color: #fff;
+	font-size: 1em;
+}
+#home-mid {
+	clear: left;
+	width: 50%;
+	float: left;
+}
+#home-slider {
+	width:49%;
+	float: right;
+}
+
+/* Text for front page content */
+h1.entry-title a {
+	font-size: 2em;
+	color: #fff;
+	text-decoration: none;
+}
+.entry-content {
+	color: #fff;
+}
 /* Text meant only for screen readers */
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
@@ -401,10 +468,11 @@ a:active {
 ----------------------------------------------- */
 
 .main-navigation {
-	clear: both;
+	margin-top: 30px;
+	clear: right;
 	display: block;
-	float: left;
-	width: 100%;
+	float: right;
+	width: 60%;
 }
 .main-navigation ul {
 	list-style: none;

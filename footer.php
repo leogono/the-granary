@@ -10,7 +10,18 @@
 
 	</div><!-- #content -->
 
+
 	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div id="footer-widget" class="widget-area" role="complementary">
+		<?php do_action( 'before_sidebar' ); ?>
+		<?php if ( ! dynamic_sidebar( 'sidebar-4' ) ) : ?>
+
+			<aside id="search" class="widget widget_search">
+				<?php get_search_form(); ?>
+			</aside>
+
+		<?php endif; // end sidebar widget area ?>
+		</div><!-- #footer-widget -->
 		<div class="site-info">
 			<?php do_action( 'the_granary_credits' ); ?>
 			<a href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by %s', 'the-granary' ), 'WordPress' ); ?></a>
