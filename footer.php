@@ -23,18 +23,17 @@
 		<?php endif; // end sidebar widget area ?>
 		</div><!-- #footer-widget -->
 		<p id="footer-text">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-				Vestibulum consequat, orci ac laoreet cursus, dolor sem luctus lorem,
-				 eget consequat magna felis a magna. Aliquam scelerisque condimentum ante, 
-				 eget facilisis tortor lobortis in. In interdum venenatis justo eget consequat.
-				  Morbi commodo rhoncus mi nec pharetra. Aliquam erat
-				</p>
-		<div class="site-info">
-			<?php do_action( 'the_granary_credits' ); ?>
-			<a href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by %s', 'the-granary' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'the-granary' ), 'The Granary', '<a href="http://leogono.com" rel="designer">Leo Gono</a>' ); ?>
-		</div><!-- .site-info -->
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+			Vestibulum consequat, orci ac laoreet cursus, dolor sem luctus lorem,
+			eget consequat magna felis a magna. Aliquam scelerisque condimentum ante, 
+			eget facilisis tortor lobortis in. In interdum venenatis justo eget consequat.
+			Morbi commodo rhoncus mi nec pharetra. Aliquam erat
+		</p>
+		<ul id="social-media">
+			<li class="facebook"><a href="#">facebook</a></li>
+			<li class="tumbler"><a href="#">tumbler</a></li>
+			<li class="instagram"><a href="#">instagram</a></li>
+		</ul>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

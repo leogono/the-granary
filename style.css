@@ -422,6 +422,7 @@ h2.site-description {
 }
 p#footer-text {
 	width: 50%;
+	float: left;
 }
 
 /* Text for front page content */
@@ -436,6 +437,34 @@ h1.entry-title a {
 /* Text for Widget Areas */
 .textwidget {
 	border-bottom: 1px solid #fff;
+}
+ul#social-media {
+	list-style: none;
+	width: 20%;
+	float: right;
+}
+ul#social-media li {
+	dispaly:block;
+	float: left;
+	padding: 5px;
+}
+li.facebook {
+	width: 31px;
+	height: 32px;
+	background: url("images/facebook.png") no-repeat;
+	text-indent: -9999px;
+}
+li.tumbler {
+	width: 31px;
+	height: 32px;
+	background: url("images/tumbler.png") no-repeat;
+	text-indent: -9999px;
+}
+li.instagram {
+	width: 31px;
+	height: 32px;
+	background: url("images/instagram.png") no-repeat;
+	text-indent: -9999px;
 }
 /* Text meant only for screen readers */
 .screen-reader-text {
