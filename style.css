@@ -382,8 +382,9 @@ h2.site-description {
 	background: #999900 url("images/LogoBackground.jpg") no-repeat right top;
 	height: 150px;
 }
-#content {
-	background: #999900 url("images/MainBackground.jpg") no-repeat right top;
+.home #content {
+	background: #999900 url("images/MainBackground.jpg") no-repeat right top 50px;
+	margin-bottom: 20px;
 }
 #primary {
 	width: 60%;
@@ -404,9 +405,10 @@ h2.site-description {
 }
 #home-mid {
 	clear: left;
-	width: 50%;
+	width: 45%;
 	float: left;
 	font-family: 'Source Sans Pro', sans-serif;
+	padding: 30px;
 }
 #home-slider {
 	width:49%;
@@ -423,6 +425,7 @@ h2.site-description {
 p#footer-text {
 	width: 50%;
 	float: left;
+	padding: 30px;
 }
 
 /* Text for front page content */
@@ -438,6 +441,9 @@ h1.entry-title a {
 .textwidget {
 	border-bottom: 1px solid #fff;
 }
+#home-mid .widget_text {
+	width: 50%;
+}
 ul#social-media {
 	list-style: none;
 	width: 20%;
@@ -448,11 +454,14 @@ ul#social-media li {
 	float: left;
 	padding: 5px;
 }
+ul#social-media li a {
+	text-indent: -9999px;
+}
 li.facebook {
 	width: 31px;
 	height: 32px;
 	background: url("images/facebook.png") no-repeat;
-	text-indent: -9999px;
+	text-indent: -9999px;	
 }
 li.tumbler {
 	width: 31px;
