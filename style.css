@@ -429,12 +429,12 @@ p#footer-text {
 }
 
 /* Text for front page content */
-h1.entry-title a {
+.home h1.entry-title a {
 	font-size: 2em;
 	color: #fff;
 	text-decoration: none;
 }
-.entry-content {
+.home .entry-content {
 	color: #fff;
 }
 /* Text for Widget Areas */
