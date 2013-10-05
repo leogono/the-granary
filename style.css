@@ -374,7 +374,7 @@ h2.site-description {
 }
 .main-navigation li.current_page_item a, 
 .main-navigation li.current-menu-item a {
-	border: 1px solid #fff;
+	border: 1px solid #d1cb5c;
 }
 ul.sub-menu {
 	padding: 10px;
@@ -448,7 +448,7 @@ h1.entry-title {
 	float: right;
 	color: #fff;
 	font-family: 'Source Sans Pro', sans-serif;
-	border-left: 1px solid #fff;
+	border-left: 1px solid #d1cb5c;
 	padding-left: 3%;
 	margin: 3%;
 }
@@ -496,9 +496,6 @@ p#footer-text {
 	color: #fff;
 }
 /* Text for Widget Areas */
-.textwidget {
-	border-bottom: 1px solid #fff;
-}
 #home-top h1.widget-title {
 	font-size: 20px;
 	font-weight: normal;
@@ -506,6 +503,8 @@ p#footer-text {
 #home-top .widget_text {
 	font-size: 14px;
 	font-weight: 300;
+	border-bottom: 1px solid #d1cb5c;
+	padding-bottom: 10px;
 }
 #home-mid h1.widget-title {
 	font-size: 26.39px;
