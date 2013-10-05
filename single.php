@@ -16,16 +16,12 @@ get_header(); ?>
 
 			<?php the_granary_content_nav( 'nav-below' ); ?>
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template
-				if ( comments_open() || '0' != get_comments_number() )
-					comments_template();
-			?>
+			<?php if ( has_post_thumbnail() ) {
+					the_post_thumbnail();
+			} ?>
 
 		<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
