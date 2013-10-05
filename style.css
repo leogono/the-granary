@@ -386,7 +386,7 @@ ul.sub-menu li.menu-item a {
 	color: #eae6a6;
 	border: none;
 }
-ul.sub-menu a:hover {
+ul.sub-menu li.menu-item a:hover {
 	text-transform: none;
 	font-size: 11.79px;
 	color: #fff;
