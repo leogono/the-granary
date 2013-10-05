@@ -22,7 +22,7 @@ along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normali
 and Blueprint http://www.blueprintcss.org/
 */
 
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 
 
 /* =Reset
@@ -366,7 +366,7 @@ h2.site-description {
 .main-navigation a {
 	margin-right: 10px;
 	color: white;
-	font-size: 1.2em;
+	font-size: 15.35px;
 	font-weight: normal;
 	font-family: 'Source Sans Pro', sans-serif;
 	text-transform: uppercase;
@@ -386,11 +386,39 @@ h2.site-description {
 	background: #999900 url("images/MainBackground.jpg") no-repeat right top 50px;
 	margin-bottom: 20px;
 }
-#primary {
+.home #primary {
 	width: 60%;
 	float:left;
 	padding: 30px;
 	font-family: 'Source Sans Pro', sans-serif;
+}
+#primary {
+	width: 90%;
+	float:left;
+	padding: 30px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+/* Page */
+article {
+	width: 50%;
+	float:left;
+	padding-left: 30px;
+}
+.wp-post-image {
+	float: right;
+}
+h1.entry-title {
+	font-size: 26.39px;
+	font-weight: normal;
+}
+.entry-content h2 {
+	font-size: 14px;
+	font-weight: 600;
+	color: #a49a00;
+}
+.entry-content p {
+	font-size: 14px;
+	font-weight: 300;
 }
 
 /* Widgets */
@@ -398,7 +426,6 @@ h2.site-description {
 	width: 30%;
 	float: right;
 	color: #fff;
-	font-size: 1em;
 	font-family: 'Source Sans Pro', sans-serif;
 	border-left: 1px solid #fff;
 	padding: 20px;
@@ -423,18 +450,26 @@ h2.site-description {
 	border: 1px solid #000;
 }
 p#footer-text {
+	font-size: 10.38px;
+	font-weight: 300;
 	width: 50%;
 	float: left;
 	padding: 30px;
 }
 
 /* Text for front page content */
+.home article {
+	width: 100%;
+}
 .home h1.entry-title a {
-	font-size: 2em;
+	font-size: 26.39px;
+	font-weight: normal;
 	color: #fff;
 	text-decoration: none;
 }
 .home .entry-content {
+	font-size: 14px;
+	font-weight: 400;
 	color: #fff;
 }
 /* Text for Widget Areas */
@@ -443,13 +478,19 @@ p#footer-text {
 }
 #home-top h1.widget-title {
 	font-size: 20px;
-	font-weight: bold;
+	font-weight: normal;
+}
+#home-top .widget_text {
+	font-size: 14px;
+	font-weight: 300;
 }
 #home-mid h1.widget-title {
-	font-size: 30px;
+	font-size: 26.39px;
 }
 #home-mid .widget_text {
 	width: 50%;
+	font-size: 14px;
+	font-weight: 300;
 }
 ul#social-media {
 	list-style: none;

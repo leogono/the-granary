@@ -13,12 +13,6 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'the-granary' ),
-				'after'  => '</div>',
-			) );
-		?>
 	</div><!-- .entry-content -->
 	<?php edit_post_link( __( 'Edit', 'the-granary' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
 </article><!-- #post-## -->
