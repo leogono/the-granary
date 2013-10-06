@@ -512,11 +512,30 @@ p#footer-text {
 }
 #home-mid h1.widget-title {
 	font-size: 26.39px;
+	margin-left: 50%;
 }
 #home-mid .widget_text {
-	width: 50%;
 	font-size: 14px;
 	font-weight: 300;
+}
+#home-mid .textwidget img {
+	margin-top: -5%;
+	width: 169px;
+	height: 119px;
+	float: left;
+}
+#home-mid .textwidget p {
+	margin-left: 50%;
+}
+#home-mid .textwidget a {
+	display: block;
+	margin: 10% auto;
+	width: 439px;
+	height: 72px;
+	background-image: url("images/home-mid-link.jpg");
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 ul#social-media {
 	list-style: none;
