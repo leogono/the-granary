@@ -16,9 +16,9 @@
 		<?php do_action( 'before_sidebar' ); ?>
 		<?php if ( ! dynamic_sidebar( 'sidebar-4' ) ) : ?>
 
-			<img src="<?php bloginfo('stylesheet_directory'); ?>/images/footerwidget1.jpg" width="301px" height="119px" />
-			<img src="<?php bloginfo('stylesheet_directory'); ?>/images/footerwidget2.jpg" width="301px" height="119px" />
-			<img src="<?php bloginfo('stylesheet_directory'); ?>/images/footerwidget3.jpg" width="301px" height="119px" />
+			<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/footerwidget1.jpg" width="301px" height="119px" />
+			<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/footerwidget2.jpg" width="301px" height="119px" />
+			<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/footerwidget3.jpg" width="301px" height="119px" />
 
 		<?php endif; // end sidebar widget area ?>
 		</div><!-- #footer-widget -->
