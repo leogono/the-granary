@@ -347,7 +347,7 @@ a:active {
 h1.site-title a {
 	width: 326px;
 	height: 58px;
-	background: url("images/GranaryLogo.png") no-repeat;
+	background: url("assets/img/GranaryLogo.png") no-repeat;
 	display: block;
 }
 h2.site-description {
@@ -391,11 +391,11 @@ ul.sub-menu li.menu-item a:hover {
 }
 /* Contents */
 #masthead {
-	background: #999900 url("images/LogoBackground.jpg") no-repeat right top;
+	background: #999900 url("assets/img/LogoBackground.jpg") no-repeat right top;
 	height: 150px;
 }
 .home #content {
-	background: #999900 url("images/MainBackground.jpg") no-repeat right top 50px;
+	background: #999900 url("assets/img/MainBackground.jpg") no-repeat right top 50px;
 	margin-bottom: 20px;
 }
 .home #primary {
@@ -526,7 +526,7 @@ p#footer-text {
 	margin: 10% auto;
 	width: 439px;
 	height: 72px;
-	background-image: url("images/home-mid-link.jpg");
+	background-image: url("assets/img/home-mid-link.jpg");
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
@@ -545,7 +545,7 @@ li.facebook a {
 	display: block;
 	width: 31px;
 	height: 32px;
-	background: url("images/facebook.png") no-repeat;
+	background: url("assets/img/facebook.png") no-repeat;
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;	
@@ -554,7 +554,7 @@ li.tumbler a {
 	display: block;
 	width: 31px;
 	height: 32px;
-	background: url("images/tumbler.png") no-repeat;
+	background: url("assets/img/tumbler.png") no-repeat;
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
@@ -563,7 +563,7 @@ li.instagram  a {
 	display: block;
 	width: 31px;
 	height: 32px;
-	background: url("images/instagram.png") no-repeat;
+	background: url("assets/img/instagram.png") no-repeat;
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
