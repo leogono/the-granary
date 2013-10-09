@@ -391,11 +391,11 @@ ul.sub-menu li.menu-item a:hover {
 }
 /* Contents */
 #masthead {
-	background: #999900 url("assets/img/LogoBackground.jpg") no-repeat right top;
+	background: #a49a00 url("assets/img/main-bg.png") no-repeat 0 0;
 	height: 150px;
 }
 .home #content {
-	background: #999900 url("assets/img/MainBackground.jpg") no-repeat right top 50px;
+	background: #a49a00 url("assets/img/main-bg.png") no-repeat 0 -150px;
 	margin-bottom: 20px;
 }
 .home #primary {
