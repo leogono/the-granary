@@ -345,14 +345,10 @@ a:active {
 
 /* Logo */
 h1.site-title a {
-	display: block;
 	width: 326px;
 	height: 58px;
-	background-image: url("images/GranaryLogo.png");
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	
+	background: url("images/GranaryLogo.png") no-repeat;
+	display: block;
 }
 h2.site-description {
 	display: none;
