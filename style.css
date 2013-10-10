@@ -708,22 +708,6 @@ ul.sub-menu .menu-item a:hover {
 	color: #fff;
 	padding: 2px 5px;
 }
-/* Small menu */
-.menu-toggle {
-	cursor: pointer;
-	display: none;
-}
-
-@media screen and (max-width: 600px) {
-	.menu-toggle,
-	.main-navigation.toggled .nav-menu {
-		display: block;
-	}
-
-	.main-navigation ul {
-		display: none;
-	}
-}
 
 
 /* =Content
