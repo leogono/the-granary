@@ -15,8 +15,6 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<?php wp_head(); ?>
-
 <script type="text/javascript">
 WebFontConfig = {
   google: { families: [ 'Source+Sans+Pro:300,400,300italic,400italic:latin' ] }
@@ -30,6 +28,13 @@ WebFontConfig = {
   var s = document.getElementsByTagName('script')[0];
   s.parentNode.insertBefore(wf, s);
 })(); </script>
+<style>
+	.wf-loading * {
+		visibility: hidden;
+	}
+</style>
+
+<?php wp_head(); ?>
 
 </head>
 
@@ -43,8 +48,8 @@ WebFontConfig = {
 		</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<h1 class="menu-toggle"><?php _e( 'Menu', 'the-granary' ); ?></h1>
-			<div class="screen-reader-text skip-link"><a href="#content"><?php _e( 'Skip to content', 'the-granary' ); ?></a></div>
+			<!-- <h1 class="menu-toggle"><?php _e( 'Menu', 'the-granary' ); ?></h1>
+			<div class="screen-reader-text skip-link"><a href="#content"><?php _e( 'Skip to content', 'the-granary' ); ?></a></div> -->
 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- #site-navigation -->

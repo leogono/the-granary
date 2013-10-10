@@ -115,10 +115,10 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 hr {
-	background-color: #ccc;
+	background-color: #beb74a;
 	border: 0;
 	height: 1px;
-	margin-bottom: 1.5em;
+	margin-bottom: 10px;
 }
 
 /* Text elements */
@@ -384,7 +384,7 @@ h2.site-description {
 	margin: 0 0 20px;
 	padding:  0 40px;
 	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-	border-right: 1px solid #d1cb5c;
+	border-right: 1px solid #beb74a;
 }
 /* Page */
 #page {
@@ -448,6 +448,7 @@ h1.entry-title {
 
 #footer-widget {
 	padding: 0 25px;
+	width: 978px;
 }
 #footer-widget img {
 	padding: 3px;
@@ -471,11 +472,12 @@ p#footer-text {
 	width: 100%;
 	margin-bottom: 0;
 }
-.home .entry-header h1, .home-top h1 {
+.home.page .entry-header .entry-title, .home-top h1 {
 	font-size: 26px;
 	font-weight: 400;
 	color: #fff;
 	text-decoration: none;
+	margin-top: 0 ;
 }
 .home .entry-content {
 	font-size: 14px;
