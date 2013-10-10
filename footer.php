@@ -9,8 +9,7 @@
 ?>
 
 	
-
-
+</div><!--  #content -->
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div id="footer-widget" class="widget-area" role="complementary">
 		<?php do_action( 'before_sidebar' ); ?>
