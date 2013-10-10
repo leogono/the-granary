@@ -113,6 +113,9 @@ function the_granary_scripts() {
 
 	wp_enqueue_script( 'the-granary-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20120206', true );
 
+	wp_enqueue_script( 'html5shiv', get_template_directory_uri() . '/assets/js/html5shiv.js', array(), '3.7.0', false );
+	wp_enqueue_script( 'html5shiv-printshiv', get_template_directory_uri() . '/assets/js/html5shiv-printshiv.js', array(), '3.7.0', false );
+
 	wp_enqueue_script( 'the-granary-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
