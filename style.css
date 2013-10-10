@@ -315,15 +315,15 @@ textarea {
 
 /* Links */
 a {
-	color: royalblue;
+	color: #A49A00;
 }
 a:visited {
-	color: purple;
+	color: #A49A00;
 }
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #847c00;
 }
 
 /* Alignment */
@@ -393,10 +393,6 @@ h2.site-description {
 	margin: 0 auto;
 	border-left: 1px solid #999900;
 	border-right: 1px solid #999900;
-}
-article {
-	width: 50%;
-	float:left;
 }
 .wp-post-image {
 	width: 50%;
