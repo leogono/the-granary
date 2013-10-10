@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
-<div id="primary" class="content-area">
+<div id="front-page-wrap" class="clearfix">
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -28,6 +29,31 @@
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+	<div id="home-top" class="widget-area" role="complementary">
+		<?php do_action( 'before_sidebar' ); ?>
+		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
+
+
+		<?php endif; // end sidebar widget area ?>
+	</div><!-- #home-top -->
+
+	<div id="home-mid" class="widget-area" role="complementary">
+		<?php do_action( 'before_sidebar' ); ?>
+		<?php if ( ! dynamic_sidebar( 'sidebar-2' ) ) : ?>
+		
+		<?php endif; // end sidebar widget area ?>
+	</div><!-- #home-mid -->
+
+	<div id="home-slider" class="widget-area" role="complementary">
+		<?php do_action( 'before_sidebar' ); ?>
+		<?php if ( ! dynamic_sidebar( 'sidebar-3' ) ) : ?>
+
+			<?php echo do_shortcode("[metaslider id=162]"); ?>
+
+		<?php endif; // end sidebar widget area ?>
+	</div><!-- #home-slider -->
+</div>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
