@@ -71,17 +71,17 @@ add_action( 'after_setup_theme', 'the_granary_setup' );
 function the_granary_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Home Top', 'the-granary' ),
-		'id'            => 'sidebar-1',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
+		'id'            => 'home-top',
+		'before_widget' => '<div id="%1$s" class="home-top widget %2$s">',
+		'after_widget'  => '</div>',
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Home Mid', 'the-granary' ),
 		'id'            => 'sidebar-2',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
+		'before_widget' => '<div id="%1$s" class="clearfix widget %2$s">',
+		'after_widget'  => '</div>',
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
