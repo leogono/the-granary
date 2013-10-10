@@ -34,6 +34,7 @@ function the_granary_setup() {
 	 */
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'page-thumb', 447, 9999 );
 
 	/**
 	 * Enable support for Post Thumbnails on posts and pages
@@ -57,10 +58,10 @@ function the_granary_setup() {
 	/**
 	 * Setup the WordPress core custom background feature.
 	 */
-	add_theme_support( 'custom-background', apply_filters( 'the_granary_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
+	// add_theme_support( 'custom-background', apply_filters( 'the_granary_custom_background_args', array(
+	// 	'default-color' => 'ffffff',
+	// 	'default-image' => '',
+	// ) ) );
 }
 endif; // the_granary_setup
 add_action( 'after_setup_theme', 'the_granary_setup' );
