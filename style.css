@@ -394,22 +394,24 @@ ul.sub-menu li.menu-item a:hover {
 	background: #a49a00 url("assets/img/main-bg.png") no-repeat 0 0;
 	height: 150px;
 }
-.home #content {
+.home #front-page-wrap {
 	background: #a49a00 url("assets/img/main-bg.png") no-repeat 0 -150px;
 	margin-bottom: 20px;
 }
-.home #primary {
-	width: 55%;
+
+#primary {
+	width: 968px;
 	float:left;
-	margin: 3%;
-	margin-right: 0px;
+	margin: 0 30px;
 	font-family: 'Source Sans Pro', sans-serif;
 }
-#primary {
-	width: 90%;
+.home #primary {
+	width: 570px;
 	float:left;
-	margin: 3%;
+	margin: 0 0 20px;
+	padding:  0 40px;
 	font-family: 'Source Sans Pro', sans-serif;
+	border-right: 1px solid #d1cb5c;
 }
 /* Page */
 #page {
@@ -442,13 +444,11 @@ h1.entry-title {
 
 /* Widgets */
 #home-top {
-	width: 30%;
+	width: 290px;
 	float: right;
 	color: #fff;
 	font-family: 'Source Sans Pro', sans-serif;
-	border-left: 1px solid #d1cb5c;
-	padding-left: 3%;
-	margin: 3%;
+	margin-right: 40px;
 }
 #home-mid {
 	clear: left;
@@ -479,12 +479,13 @@ p#footer-text {
 }
 
 /* Text for front page content */
-.home article {
+.home .hentry {
 	width: 100%;
+	margin-bottom: 0;
 }
-.home h1.entry-title a {
-	font-size: 26.39px;
-	font-weight: normal;
+.home .entry-header h1, .home-top h1 {
+	font-size: 26px;
+	font-weight: 400;
 	color: #fff;
 	text-decoration: none;
 }
@@ -494,34 +495,38 @@ p#footer-text {
 	color: #fff;
 }
 /* Text for Widget Areas */
-#home-top h1.widget-title {
+#home-top .textwidget {
+	margin-top: 1.5em;
+	font-size: 14px;
+	font-weight: 300;
+}
+#home-top .textwidget h2 {
 	font-size: 20px;
-	font-weight: normal;
+	font-weight: 400;
+	margin-bottom: 10px;
 }
-#home-top .widget_text {
-	font-size: 14px;
+#home-top .textwidget p {
 	font-weight: 300;
-	border-bottom: 1px solid #d1cb5c;
-	padding-bottom: 10px;
+	font-size: 14px;
+	margin-bottom: 15px;
 }
+
 #home-mid h1.widget-title {
-	font-size: 26.39px;
-	margin-left: 50%;
+	font-size: 26px;
+	margin-left: 190px;
 }
-#home-mid .widget_text {
+#home-mid p {
 	font-size: 14px;
 	font-weight: 300;
 }
-#home-mid .textwidget img {
-	margin-top: -5%;
-	width: 169px;
-	height: 119px;
-	float: left;
+#home-mid .widget img.alignleft {
+	margin-right: 20px;
+	background: #fff;
+	padding: 4px;
+	border: 1px solid #eee;
+	margin-top: -30px;
 }
-#home-mid .textwidget p {
-	margin-left: 50%;
-}
-#home-mid .textwidget a {
+/*#home-mid .textwidget a {
 	display: block;
 	margin: 10% auto;
 	width: 439px;
@@ -530,7 +535,7 @@ p#footer-text {
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
-}
+}*/
 ul#social-media {
 	list-style: none;
 	width: 20%;
