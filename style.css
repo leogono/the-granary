@@ -394,13 +394,12 @@ h2.site-description {
 	border-left: 1px solid #999900;
 	border-right: 1px solid #999900;
 }
-.wp-post-image {
-	width: 50%;
-	float: right;
-}
 h1.entry-title {
 	font-size: 26.39px;
 	font-weight: normal;
+}
+.page .entry-header .entry-title {
+	margin-top: 30px;
 }
 .entry-content h2 {
 	font-size: 14px;
@@ -412,6 +411,19 @@ h1.entry-title {
 	font-weight: 300;
 }
 
+/*Page with Thumbnail*/
+.entry-content.with-thumb {
+	width: 50%;
+	float: left;
+}
+.thumbnail-wrap {
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+.thumbnail-wrap img {
+
+}
 /* Widgets */
 #home-top {
 	width: 290px;
@@ -675,7 +687,8 @@ li.instagram  a {
 	display: block;
 }
 .main-navigation li.current_page_item a,
-.main-navigation li.current-menu-item a {
+.main-navigation li.current-menu-item a,
+.main-navigation li.current-menu-parent a {
 	border: 1px solid #d1cb5c;
 	padding: 2px 5px;
 }
