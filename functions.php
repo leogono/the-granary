@@ -81,7 +81,7 @@ function the_granary_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Home Mid', 'the-granary' ),
 		'id'            => 'sidebar-2',
-		'before_widget' => '<div id="%1$s" class="clearfix widget %2$s">',
+		'before_widget' => '<div id="%1$s" class="clearfix homemid-widget %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
@@ -89,18 +89,18 @@ function the_granary_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Home Slider', 'the-granary' ),
 		'id'            => 'sidebar-3',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
+		'before_widget' => '<div id="%1$s" class="slider-widget %2$s">',
+		'after_widget'  => '</div>',
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Footer', 'the-granary' ),
 		'id'            => 'sidebar-4',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
+		'before_widget' => '<div id="%1$s" class="footer-img %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
 	) );
 }
 add_action( 'widgets_init', 'the_granary_widgets_init' );
