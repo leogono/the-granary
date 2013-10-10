@@ -104,7 +104,7 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 1.5;
@@ -364,11 +364,11 @@ h2.site-description {
 .main-navigation a {
 	margin-right: 10px;
 	color: white;
-	font-size: 15.35px;
+	font-size: 15px;
 	font-weight: normal;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
-	padding: 5px;
+	padding: 3px 6px;
 }
 .main-navigation li.current_page_item a, 
 .main-navigation li.current-menu-item a {
@@ -403,18 +403,19 @@ ul.sub-menu li.menu-item a:hover {
 	width: 968px;
 	float:left;
 	margin: 0 30px;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 }
 .home #primary {
 	width: 570px;
 	float:left;
 	margin: 0 0 20px;
 	padding:  0 40px;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 	border-right: 1px solid #d1cb5c;
 }
 /* Page */
 #page {
+	background: #fff;
 	width: 1028px;
 	margin: 0 auto;
 	border-left: 1px solid #999900;
@@ -447,15 +448,15 @@ h1.entry-title {
 	width: 290px;
 	float: right;
 	color: #fff;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 	margin-right: 40px;
 }
 #home-mid {
 	clear: left;
-	width: 45%;
+	width: 460px;
 	float: left;
-	font-family: 'Source Sans Pro', sans-serif;
-	padding: 3%;
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+	padding: 0 30px;
 }
 #home-slider {
 	width:49%;
@@ -467,7 +468,7 @@ h1.entry-title {
 #footer-widget img {
 	width: 26%;
 	padding: 1%;
-	margin: 2%;
+	margin: 0 2% 2%;
 	border: 1px solid #c0c0c0;
 }
 p#footer-text {
@@ -495,22 +496,28 @@ p#footer-text {
 	color: #fff;
 }
 /* Text for Widget Areas */
+
+.home-top h1 {
+	margin-bottom: 15px;
+}
 #home-top .textwidget {
 	margin-top: 1.5em;
 	font-size: 14px;
 	font-weight: 300;
 }
-#home-top .textwidget h2 {
+#home-top h2 {
 	font-size: 20px;
 	font-weight: 400;
 	margin-bottom: 10px;
 }
-#home-top .textwidget p {
+#home-top p {
 	font-weight: 300;
 	font-size: 14px;
 	margin-bottom: 15px;
 }
-
+#home-mid .widget {
+	margin-bottom: 15px;
+}
 #home-mid h1.widget-title {
 	font-size: 26px;
 	margin-left: 190px;
@@ -518,6 +525,7 @@ p#footer-text {
 #home-mid p {
 	font-size: 14px;
 	font-weight: 300;
+	margin-bottom: 0;
 }
 #home-mid .widget img.alignleft {
 	margin-right: 20px;
@@ -525,6 +533,13 @@ p#footer-text {
 	padding: 4px;
 	border: 1px solid #eee;
 	margin-top: -30px;
+}
+
+#home-slider .widget {
+	margin-bottom: 0;
+}
+#home-slider .widget .flexslider {
+	margin-bottom: 0;
 }
 /*#home-mid .textwidget a {
 	display: block;
