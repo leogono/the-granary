@@ -361,41 +361,14 @@ h2.site-description {
 	margin: 3%;
 	float: left;
 }
-.main-navigation a {
-	margin-right: 10px;
-	color: white;
-	font-size: 15px;
-	font-weight: normal;
-	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-	text-transform: uppercase;
-	padding: 3px 6px;
-}
-.main-navigation li.current_page_item a, 
-.main-navigation li.current-menu-item a {
-	border: 1px solid #d1cb5c;
-}
-ul.sub-menu {
-	padding: 10px;
-}
 
-ul.sub-menu li.menu-item a {
-	text-transform: none;
-	font-size: 11.79px;
-	color: #eae6a6;
-	border: none;
-}
-ul.sub-menu li.menu-item a:hover {
-	text-transform: none;
-	font-size: 11.79px;
-	color: #fff;
-}
 /* Contents */
 #masthead {
 	background: #a49a00 url("assets/img/main-bg.png") no-repeat 0 0;
-	height: 150px;
+	height: 135px;
 }
 .home #front-page-wrap {
-	background: #a49a00 url("assets/img/main-bg.png") no-repeat 0 -150px;
+	background: #a49a00 url("assets/img/main-bg.png") no-repeat 0 -135px;
 	margin-bottom: 20px;
 }
 
@@ -644,7 +617,6 @@ li.instagram  a {
 
 /* =Menu
 ----------------------------------------------- */
-
 .main-navigation {
 	margin-top: 30px;
 	clear: right;
@@ -664,15 +636,23 @@ li.instagram  a {
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	margin-right: 10px;
+	color: white;
+	font-size: 15px;
+	font-weight: normal;
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	padding: 3px 6px;
 }
 .main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	display: none;
 	float: left;
-	left: 0;
+	left: 50%;
 	position: absolute;
 	top: 1.5em;
 	z-index: 99999;
+	margin-left: -120px;
+	text-align: center;
 }
 .main-navigation ul ul ul {
 	left: 100%;
@@ -680,12 +660,18 @@ li.instagram  a {
 }
 .main-navigation ul ul a {
 	width: 200px;
+	margin-left: 0;
+	padding: 2px 5px;
 }
 .main-navigation ul ul li {
 }
 .main-navigation li:hover > a {
+	background: #959a00;
+	border: 1px solid #d1cb5c;
+	padding: 2px 5px;
 }
 .main-navigation ul ul :hover > a {
+	background: none;
 }
 .main-navigation ul ul a:hover {
 }
@@ -694,8 +680,26 @@ li.instagram  a {
 }
 .main-navigation li.current_page_item a,
 .main-navigation li.current-menu-item a {
+	border: 1px solid #d1cb5c;
+	padding: 2px 5px;
+}
+ul.sub-menu {
+	padding: 10px;
 }
 
+ul.sub-menu .menu-item a {
+	text-transform: none;
+	font-size: 12px;
+	color: #eae6a6;
+	border: none;
+	margin-right: 0;
+}
+ul.sub-menu .menu-item a:hover {
+	text-transform: none;
+	font-size: 12px;
+	color: #fff;
+	padding: 2px 5px;
+}
 /* Small menu */
 .menu-toggle {
 	cursor: pointer;
