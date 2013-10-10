@@ -11,15 +11,9 @@
 	
 </div><!--  #content -->
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div id="footer-widget" class="widget-area" role="complementary">
+		<div id="footer-widget" class="widget-area clearfix" role="complementary">
 		<?php do_action( 'before_sidebar' ); ?>
-		<?php if ( ! dynamic_sidebar( 'sidebar-4' ) ) : ?>
-
-			<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/footerwidget1.jpg" width="301px" height="119px" />
-			<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/footerwidget2.jpg" width="301px" height="119px" />
-			<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/footerwidget3.jpg" width="301px" height="119px" />
-
-		<?php endif; // end sidebar widget area ?>
+		<?php if ( ! dynamic_sidebar( 'sidebar-4' ) ) ; ?>
 		</div><!-- #footer-widget -->
 		<p id="footer-text">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
