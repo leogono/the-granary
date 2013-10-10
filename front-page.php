@@ -2,7 +2,7 @@
 
 <div id="front-page-wrap" class="clearfix">
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<div id="main" class="site-main clearfix" role="document">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -14,7 +14,7 @@
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
-					get_template_part( 'content', get_post_format() );
+					get_template_part( 'content', 'page' );
 				?>
 
 			<?php endwhile; ?>
@@ -27,33 +27,24 @@
 
 		<?php endif; ?>
 
-		</main><!-- #main -->
+		</div><!-- #main -->
 	</div><!-- #primary -->
 
 	<div id="home-top" class="widget-area" role="complementary">
-		<?php do_action( 'before_sidebar' ); ?>
-		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
-
-
-		<?php endif; // end sidebar widget area ?>
+		<?php if ( ! dynamic_sidebar( 'home-top' ) ) ; ?>
 	</div><!-- #home-top -->
-
-	<div id="home-mid" class="widget-area" role="complementary">
-		<?php do_action( 'before_sidebar' ); ?>
-		<?php if ( ! dynamic_sidebar( 'sidebar-2' ) ) : ?>
-		
-		<?php endif; // end sidebar widget area ?>
-	</div><!-- #home-mid -->
-
-	<div id="home-slider" class="widget-area" role="complementary">
-		<?php do_action( 'before_sidebar' ); ?>
-		<?php if ( ! dynamic_sidebar( 'sidebar-3' ) ) : ?>
-
-			<?php echo do_shortcode("[metaslider id=162]"); ?>
-
-		<?php endif; // end sidebar widget area ?>
-	</div><!-- #home-slider -->
 </div>
+
+<div id="home-mid" class="widget-area" role="complementary">
+	<?php do_action( 'before_sidebar' ); ?>
+	<?php if ( ! dynamic_sidebar( 'sidebar-2' ) ) ; ?>
+</div><!-- #home-mid -->
+
+<div id="home-slider" class="widget-area" role="complementary">
+	<?php do_action( 'before_sidebar' ); ?>
+	<?php if ( ! dynamic_sidebar( 'sidebar-3' ) ) ; ?>
+</div><!-- #home-slider -->
+
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
