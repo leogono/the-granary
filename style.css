@@ -445,7 +445,9 @@ h1.entry-title {
 }
 
 /*Footer*/
-
+#colophon {
+	border-bottom: 1px solid #990;
+}
 #footer-widget {
 	padding: 0 25px;
 	width: 978px;
