@@ -7,7 +7,16 @@
  * @package The Granary
  */
 ?>
+<?php
 
+//Variables
+
+$footerText = get_field('footer_text', 'option');
+$facebookUrl = get_field('facebook_url', 'option');
+$twitterUrl = get_field('twitter_url', 'option');
+$linkedinUrl = get_field('linkedin_url', 'option');
+
+?>
 	
 </div><!--  #content -->
 	<footer id="colophon" class="site-footer" role="contentinfo">
@@ -16,16 +25,25 @@
 		<?php if ( ! dynamic_sidebar( 'sidebar-4' ) ) ; ?>
 		</div><!-- #footer-widget -->
 		<div id="footer-text">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-			Vestibulum consequat, orci ac laoreet cursus, dolor sem luctus lorem,
-			eget consequat magna felis a magna. Aliquam scelerisque condimentum ante, 
-			eget facilisis tortor lobortis in. In interdum venenatis justo eget consequat.
-			Morbi commodo rhoncus mi nec pharetra. Aliquam erat
+			<?php if($footerText) {
+				echo $footerText;
+			}
+			else {
+				echo 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+			Vestibulum consequat, orci ac laoreet cursus, dolor sem luctus lorem, eget consequat magna felis a magna. Aliquam scelerisque condimentum ante, eget facilisis tortor lobortis in. In interdum venenatis justo eget consequat. Morbi commodo rhoncus mi nec pharetra.';
+			} ?>
+			
 		</div>
 		<ul id="social-media">
-			<li class="facebook"><a href="#">facebook</a></li>
-			<li class="tumbler"><a href="#">tumbler</a></li>
-			<li class="instagram"><a href="#">instagram</a></li>
+			<?php if($facebookUrl) {
+				echo '<li class="facebook"><a href="'.$facebookUrl.'">Facebook</a></li>';
+			} ?>
+			<?php if($twitterUrl) {
+				echo '<li class="twitter"><a href="'.$twitterUrl.'">Twitter</a></li>';
+			} ?>
+			<?php if($linkedinUrl) {
+				echo '<li class="linkedin"><a href="'.$linkedinUrl.'">LinkedIn</a></li>';
+			} ?>
 		</ul>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
