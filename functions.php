@@ -154,5 +154,5 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 //Load ACF
-// define( 'ACF_LITE', true );
+define( 'ACF_LITE', true );
 include_once('inc/acf-activate.php');
