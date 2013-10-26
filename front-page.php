@@ -34,15 +34,11 @@
 </div>
 
 <div id="home-mid" class="widget-area" role="complementary">
-	<?php do_action( 'before_sidebar' ); ?>
 	<?php if ( ! dynamic_sidebar( 'sidebar-2' ) ) ; ?>
 </div><!-- #home-mid -->
 
 <div id="home-slider" class="widget-area" role="complementary">
-	<?php do_action( 'before_sidebar' ); ?>
 	<?php if ( ! dynamic_sidebar( 'sidebar-3' ) ) ; ?>
 </div><!-- #home-slider -->
 
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
