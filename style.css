@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 hr {
-	background-color: #beb74a;
+	background-color: #dec34f;
 	border: 0;
 	height: 1px;
 	margin-bottom: 10px;
@@ -364,11 +364,11 @@ h2.site-description {
 
 /* Contents */
 #masthead {
-	background: #a49a00 url("assets/img/main-bg.png") no-repeat 0 0;
+	background: #d1aa07 url("assets/img/main-bg.png") no-repeat 0 0;
 	height: 135px;
 }
 .home #front-page-wrap {
-	background: #a49a00 url("assets/img/main-bg.png") no-repeat 0 -135px;
+	background: #d1aa07 url("assets/img/main-bg.png") no-repeat 0 -135px;
 	margin-bottom: 20px;
 }
 
@@ -384,15 +384,15 @@ h2.site-description {
 	margin: 0 0 20px;
 	padding:  0 40px;
 	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-	border-right: 1px solid #beb74a;
+	border-right: 1px solid #dec34f;
 }
 /* Page */
 #page {
 	background: #fff;
 	width: 1028px;
 	margin: 0 auto;
-	border-left: 1px solid #999900;
-	border-right: 1px solid #999900;
+	border-left: 1px solid #d2cd80;
+	border-right: 1px solid #d2cd80;
 }
 h1.entry-title {
 	font-size: 26.39px;
@@ -666,6 +666,8 @@ li.linkedin  a {
 .main-navigation ul ul ul {
 	left: 100%;
 	top: 0;
+	padding: 0;
+	margin-left: -80px;
 }
 .main-navigation ul ul a {
 	width: 200px;
